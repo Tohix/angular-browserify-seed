@@ -17,6 +17,6 @@ module.exports =
         // modules
         require('./foo').name
     ])
-        .config(/*@ngInject*/ function ($translateProvider) {
+        .config(/*@ngInject*/ function ($translateProvider, $locationProvider) {
             $translateProvider.preferredLanguage('en');
         });

@@ -1,9 +1,20 @@
 @import "variables";
 @import "imports";
 
-body {
-  text-align: center;
+.body {
+  margin: 0 auto;
   color: #222;
+  max-width: 960px;
+  footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 960px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    background-color: #000;
+  }
 }
 
 .welcome {
@@ -19,4 +30,44 @@ body {
 a, a:visited {
   text-decoration: none;
 }
+.fabToolbardemoBasicUsage md-fab-toolbar.md-right md-fab-trigger.align-with-text {
+  left: 7px; }
+
+.image-item{
+  float: left;
+  cursor: pointer;
+  .title{
+    height: 50px;
+    overflow-y: hidden;
+  }
+}
+.title{
+    text-align: center;
+}
+
+
+
+
+@media (min-width: 801px) {
+  .image-item{
+    width: 30%;
+  }
+}
+
+@media (max-width: 800px) {
+  .image-item{
+    width: 46%;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-item{
+    width: 100%;
+  }
+}
+
+
+
+
+
 

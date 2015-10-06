@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html ng-app="expressly">
 <head>
+    <base href="/">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--bowerStyles-->
     <!--styles-->
 </head>
 <body>
-<div class="container" ng-view></div>
-<!--scripts-->
-<!--config-->
+<div class="body">
+    <div class="container" ng-view></div>
+    <!--scripts-->
+    <!--config-->
+    <footer>
+        <div class="container">
+            <div id="footer-content" class="pull-right">
+                Anton Yastrebov  - <a href="https://github.com/Tohix/angular-browserify-seed" target="_blank">
+                https://github.com/Tohix/angular-browserify-seed</a>
+            </div>
+        </div>
+    </footer>
+</div>
+
 </body>
 </html>
